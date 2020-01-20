@@ -62,7 +62,7 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/69291804_959142004449220_310954124696879104_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=NBVYluXMshUAX8CNJbX&oh=c22bc39341120956e856a378f9eb176e&oe=5ED7DB52" alt="МАСТЕР ТАРО, MINDFULLNESS"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/69291804_959142004449220_310954124696879104_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=DJtsigwJtToAX8jvBCU&oh=f576bf5957b3082830fddc15d371c9de&oe=5ED7DB52" alt="МАСТЕР ТАРО, MINDFULLNESS"></div>
 							<div class="header__logo-txt">viarden.tarot</div>
 						</a>
 						<div class="header__title">МАСТЕР ТАРО, MINDFULLNESS</div>
@@ -189,7 +189,7 @@ color: #FFFFFF;
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/80799906_124778275352301_8015490234011856854_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=rp-b3S264noAX_s0gw0&oh=3797fd1b1e54573f2db04b87f7461a13&oe=5EA2A1F8" alt="">
+							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/83893818_548357446031323_7115172580876507208_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=iYEfOntWIQ0AX9xM1nB&oh=56cc6af80e758f8fa6dd14807db86fce&oe=5EA339E3" alt="">
 							</img></center>
 						</div>
 
@@ -249,6 +249,9 @@ $(document).ready(function(){
 
 		$("#settingsContainer").show();
 		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (lid && lid == "true") {
+        localStorage.setItem("hasToken", true);
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
